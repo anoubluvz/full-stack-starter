@@ -1,0 +1,18 @@
+{
+  "name": "full-stack-app-starter",
+  "version": "1.0.0",
+  "description": "A starter project template for full stack applications",
+  "scripts": {
+    "serverDev": "npm run dev --prefix backend",
+    "clientDev": "npm start --prefix frontend",
+    "clientBuild": "npm build --prefix frontend",
+    "server": "npm start --prefix backend",
+    "dev": "concurrently --kill-others \"npm run clientDev\" \"npm run serverDev\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
